@@ -1,12 +1,21 @@
 import java.util.Scanner;
 public class RiddleGamePlayTest{
   
+  public static int getRandomNumber(int max, int min){
+    int rangeX = (max - min) + 1; 
+
+    return (int)( Math.random() * rangeX) + min;
+  }
+  
   public static void main(String[] args){
     
     String name;
     String answer;
     int riddleIndex = 0;
     RiddleQuestion activeRiddle;
+    
+
+       
     //put all riddles in array
     RiddleQuestion[] riddles = 
     {
@@ -33,9 +42,9 @@ public class RiddleGamePlayTest{
     
     
     //while user says yes to 
-    while(answer.equals("yes") && riddleIndex < riddles.length){
+    while(answer.equals("yes")){
       
-      activeRiddle = riddles[riddleIndex];
+      activeRiddle = riddles[getRandomNumber(riddles.length-1, 0)];
     
       //ask riddle 
       System.out.println(activeRiddle.getQuestion());
@@ -55,7 +64,7 @@ public class RiddleGamePlayTest{
       System.out.println("Another riddle?");
       answer = input.next();
       System.out.println("Okay!");
-      riddleIndex++; //update riddle index
+      //riddleIndex++; //update riddle index
       
     }
 
