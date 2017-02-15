@@ -23,12 +23,42 @@ public class RiddleGamePlayTest{
      new RiddleQuestion("What is heavy forward and not backwards?", "ton"),
      new RiddleQuestion("Gianni's father has three sons : Sj, Tyji and", "Gianni"),
      new RiddleQuestion("You can't see me, but I'm very strong, and I'm very popular. Answer in one word?", "John Cena"),
-     new RiddleQuestion("What part of the Turkey has the most feathers ?", "theoutside")
+     new RiddleQuestion("What part of the Turkey has the most feathers ?", "outside"),
+     new RiddleQuestion(" What begins with T, ends with T and has T in it", "teapot"),
+     new RiddleQuestion("I go in hard. I come out soft. You blow me hard. What am I", "gum")
     };
     
     
     //ask the user for their name
     Scanner input = new Scanner(System.in);
+   
+
+
+public static void main(String[] args){
+  
+  
+  System.out.println("                                                        ");
+  System.out.println("                    Welcome to Riddle Game!!!           ");
+  System.out.println("                    -------------------------           ");
+  System.out.println("                                                        ");
+  System.out.println("                                                        ");
+  System.out.println("                                                        ");
+  System.out.println("                            RULES                       ");
+  System.out.println("             -----------------------------------        ");
+  System.out.println("                                                        ");
+  System.out.println("             1.  No capital letters whatsoever          ");
+  System.out.println("                                                        ");
+  System.out.println("             2. Answer all riddles in one word          ");
+  System.out.println("                                                        ");
+  System.out.println("             3. Only answer Yes or No questions with yes or no ");
+  
+  Scanner in = new Scanner(System.in);
+  
+  
+  
+}
+
+}
     
     System.out.println("What is your name?");
     
