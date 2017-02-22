@@ -1,7 +1,8 @@
 public class RiddleQuestion{
   
   private String question;
-   private String answer;
+  private String answer;
+  private boolean used = false;
   
   public RiddleQuestion(){
     
@@ -29,7 +30,14 @@ public class RiddleQuestion{
     answer = newAnswer;
   }
   
+
+  public boolean getUsed(){
+    return used;
+  }
   
+  public void setUsed(boolean newUsed){
+    used = newUsed;
+  }
   
   public String toString(){
     return question + " " + answer + " ";
