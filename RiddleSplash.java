@@ -1,3 +1,5 @@
+
+// Java compiler figures out where to look for the Scanner class
 import java.util.Scanner;
 
 public class RiddleSplash{
@@ -6,7 +8,7 @@ public class RiddleSplash{
     //empty for now
   }
 
-
+//this creates a splash screen
   public void introSplash(){
 
 
